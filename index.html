@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .gm-style .gm-style-mtc label,
+        .gm-style .gm-style-mtc div {
+            font-weight: 400
+        }
+    </style>
+    <style>
+        .gm-control-active>img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .gm-control-active>img:nth-child(1) {
+            display: block
+        }
+
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1) {
+            display: none
+        }
+
+        .gm-control-active:hover>img:nth-child(2),
+        .gm-control-active:active>img:nth-child(3) {
+            display: block
+        }
+    </style>
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+    <style>
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+
+        .gm-ui-hover-effect:hover {
+            opacity: 1
+        }
+    </style>
+    <style>
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+    </style>
+    <style>
+        @media print {
+
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+
+        @media screen {
+
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+    </style>
+    <style>
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0, 0, 0, 0.45);
+            text-align: center
+        }
+
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+    </style>
+    <style>
+        .gm-style img {
+            max-width: none;
+        }
+
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+    </style>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122734015-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122734015-1');
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Erikas Gudelis</title>
+
+    <meta charset="utf-8">
+    <link rel="canonical" href="https://Erikas.com/">
+    <meta name="robots" content="ALL">
+    <meta name="author" content="Erikas Gudelis">
+    <link rel="author" href="https://www.facebook.com/erikas.gudelis">
+    <meta name="description" content="Erikas Gudelis.">
+    <meta http-equiv="content-language" content="en-us">
+ 
+
+    <link href="css/royal_preloader.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+    <script type="text/javascript" src="js/royal_preloader.min.js"></script>
+    <script type="text/javascript">
+        Royal_Preloader.config({
+            mode: 'number',
+            showProgress: false,
+            background: '#1d1d1d'
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ionicons.min.css" rel="stylesheet">
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/logoiconfont.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" title="main-css">
+    <link href="css/style-switcher.css" rel="stylesheet">
+
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/blue.css" title="blue">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/green.css" title="green">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/orange.css" title="orange">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/red.css" title="red">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/orangelight.css" title="orangelight">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/pinkish.css" title="pinkish">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/seagul.css" title="seagul">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/pink.css" title="pink">
+    <link rel="alternate stylesheet" type="text/css" href="css/base-light.css" title="base-light">
+
+
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/38/9/common.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/38/9/util.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/38/9/map.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/38/9/marker.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/38/9/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/38/9/stats.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/38/9/controls.js"></script>
+</head>
+
+<body class="" data-spy="scroll" data-target=".navbar" data-offset="70" cz-shortcut-listen="true">
+    <div class="parallax-mirror"
+        style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 700.4px; width: 798.4px; transform: translate3d(0px, 750.2px, 0px);">
+        <img class="parallax-slider" src="images/slider1.jpg"
+            style="position: absolute; height: 743px; width: 989px; max-width: none; transform: translate3d(-95px, -821.16px, 0px);">
+    </div>
+
+
+    <header>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="navbar-header">
+                        <button type="button" class="hamburger hamburger--slider" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+
+                    </div>
+
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#home" data-id="home" class="scroll-link">Home</a></li>
+                            <li class=""><a href="#ideology" data-id="ideology" class="scroll-link">Ideology</a></li>
+                            <li class=""><a href="#profile" data-id="profile" class="scroll-link">About</a></li>
+                            <li class=""><a href="#contact" data-id="contact" class="scroll-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="jumbotron jumbotron-main" id="home">
+        <div id="Mano-js"><canvas class="Mano-js-canvas-el" width="997" height="857"
+                style="width: 100%; height: 100%;"></canvas></div>
+        <div class="container center-vertically-holder">
+            <div class="center-vertically">
+                <div id="scaleReveal" class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+             
+                    <div class="ticker">
+                        <h1 style="margin-top: -70px;">JAVA</h1>
+                        <h1>SQL</h1>
+                        <h1>HTML</h1>
+                        <h1>CSS</h1>
+                        <h1>JAVASCRIPT</h1>
+                    </div>
+                    <hr>
+                    <p>Hey there fellow HR &amp; friends.</p>
+                    <p>Learn more about me, let's start?</p>
+                    <a href="#ideology" data-id="ideology"
+                        class="scroll-link btn btn-default btn-white btn-lg mt15">Begin <span
+                            class="ion-android-arrow-down"></span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="ideology" class="background1">
+
+
+        <div id="hello-intro" class="pt60 pb60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-3">
+                        <h2 class="no-margin rotateLeftReveal" data-sr-id="18"
+                            style=" visibility: visible;  -webkit-transform: translateX(0) scale(1) rotateX(0); opacity: 1;transform: translateX(0) scale(1) rotateX(0); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+                            Hello.</h2>
+                    </div>
+                    <div class="col-lg-10 col-sm-9 mt30-xs">
+                        <h3 class="no-margin rightReveal" data-sr-id="8"
+                            style=" visibility: visible;  -webkit-transform: translateX(0) scale(1); opacity: 1;transform: translateX(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+                            <strong>JAVA</strong> is not just a <strong>Programming language</strong> it is also
+                            <strong>a Motorcycle</strong>. Had to say it <strong>Sorry ^^</strong>.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="our-process-title" class="pt30 pb30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h4 class="no-margin">My plans are</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="our-process">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50">
+                        <div class="leftReveal" data-sr-id="3"
+                            style=" visibility: visible;  -webkit-transform: translateX(0) scale(1); opacity: 1;transform: translateX(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+                            <div class="process-intro">
+                                <h3 class="process-number">01</h3>
+                                <div><span class="process-icons pe-7s-users rotateBottomReveal" data-sr-id="15"
+                                        style=" visibility: visible;  -webkit-transform: translateY(0) scale(1) rotateX(0); opacity: 1;transform: translateY(0) scale(1) rotateX(0); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; "></span>
+                                </div>
+                                <h2>Dive into coding</h2>
+                            </div>
+                            <div class="process-content">
+                                <div><span class="process-icons pe-7s-users"></span></div>
+                                <h2 class="mt15 mb20">Dive into coding</h2>
+                                <p class="no-margin">Valid text in future.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50">
+                        <div class="bottomReveal" data-sr-id="1"
+                            style=" visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+                            <div class="process-intro">
+                                <h3 class="process-number">02</h3>
+                                <div><span class="process-icons pe-7s-diamond rotateBottomReveal" data-sr-id="16"
+                                        style=" visibility: visible;  -webkit-transform: translateY(0) scale(1) rotateX(0); opacity: 1;transform: translateY(0) scale(1) rotateX(0); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; "></span>
+                                </div>
+                                <h2>Never stop<br>to learn</h2>
+                            </div>
+                            <div class="process-content">
+                                <div><span class="process-icons pe-7s-diamond"></span></div>
+                                <h2 class="mt15 mb20">Valid text<br>in future</h2>
+                                <p class="no-margin">Valid text in future
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50 no-border-right">
+                        <div class="rightReveal" data-sr-id="9"
+                            style=" visibility: visible;  -webkit-transform: translateX(0) scale(1); opacity: 1;transform: translateX(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+                            <div class="process-intro">
+                                <h3 class="process-number">03</h3>
+                                <div><span class="process-icons pe-7s-rocket rotateBottomReveal" data-sr-id="17"
+                                        style=" visibility: visible;  -webkit-transform: translateY(0) scale(1) rotateX(0); opacity: 1;transform: translateY(0) scale(1) rotateX(0); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; "></span>
+                                </div>
+                                <h2>Achieve great<br>things</h2>
+                            </div>
+                            <div class="process-content">
+                                <div><span class="process-icons pe-7s-rocket"></span></div>
+                                <h2 class="mt15 mb20">Valid text<br>in future</h2>
+                                <p class="no-margin">Valid text in future
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="background2 section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 section-title text-center">
+                    <h2>Fields</h2>
+                    <span class="section-divider"></span>
+                </div>
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="services-box leftReveal" data-sr-id="4"
+                        style=" visibility: visible;  -webkit-transform: translateX(0) scale(1); opacity: 1;transform: translateX(0) scale(1); opacity: 1;-webkit-transition: all 0.6s ease 0s, -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: all 0.6s ease 0s, transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+                        <span class="pe-7s-pen services-icon"></span>
+                        <h3 class="service-name">1. Basic JAVA </h3>
+                        <p class="text-small">Information about JAVA. </p>
+                        <button type="button" class="btn btn-default mt10" data-toggle="modal"
+                            data-target="#item1-services">Info</button>
+                    </div>
+                </div>
+                <div class="modal fade" id="item1-services" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        class="ion-ios-close-empty"></span></button>
+                                <span class="pe-7s-pen services-icon-2"></span>
+                                <h4 class="service-title">Basic JAVA</h4>
+
+                            </div>
+                            <div class="modal-body">
+                                <p>Information about JAVA.</p>
+                                <h5 class="heading-1 modal-heading mb20">TOOLS I USE</h5>
+                                <p>Intellij IDEA<br>s
+                                    Balsamiq Mockups<br>
+                                    VScode<br>
+                                    Pen &amp; Paper</p>
+                                <h5 class="heading-1 modal-heading mb20">Focusing</h5>
+                                <p> Why did Elon Musk said that any product which needs a manual to work is broken? <br>
+                                    Because consumer goods should be easy to use. One can produce the best product ever
+                                    developed, but if none of its users can understand half of its functions, what's the
+                                    point?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-xs">
+                    <div class="services-box topReveal" data-sr-id="14"
+                        style=" visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: all 0.6s ease 0s, -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: all 0.6s ease 0s, transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+                        <span class="pe-7s-airplay services-icon"></span>
+                        <h3 class="service-name">2. Databases</h3>
+                        <p class="text-small">Information about Databases.</p>
+                        <button type="button" class="btn btn-default mt10" data-toggle="modal"
+                            data-target="#item2-services">Info</button>
+                    </div>
+                </div>
+                <div class="modal fade" id="item2-services" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        class="ion-ios-close-empty"></span>
+                                </button>
+                                <span class="pe-7s-airplay services-icon-2"></span>
+                                <h4 class="service-title">Databases</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Information about Databases.</p>
+                                <h5 class="heading-1 modal-heading mb20">Dev tools</h5>
+                                <p>MySQL<br>H2<br>PK<br>Architecture<br></p>
+                                <h5 class="heading-1 modal-heading mb20">Focusing</h5><br>
+                                <p>Building websites that accomplishes some goal or provide value, while having
+                                    well-written, easy-to-maintain code.</p>
+                                <h5 class="heading-1 modal-heading mb20">Motto</h5><br>
+                                <p>Build things. What things? Anything.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-sm mt30-xs">
+                    <div class="services-box rightReveal" data-sr-id="10"
+                        style=" visibility: visible;  -webkit-transform: translateX(0) scale(1); opacity: 1;transform: translateX(0) scale(1); opacity: 1;-webkit-transition: all 0.6s ease 0s, -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: all 0.6s ease 0s, transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+        
+                        <span class="pe-7s-phone services-icon"></span>
+                        <h3 class="service-name">3. Spring based Web</h3>
+                        <p class="text-small">
+                            Information about Spring web.
+                        </p>
+                        <button type="button" class="btn btn-default mt10" data-toggle="" data-target="">Info</button>
+                    </div>
+                </div>
+                <div class="modal fade" id="item3-services" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        class="ion-ios-close-empty"></span>
+                                </button>
+                                <span class="pe-7s-phone services-icon-2"></span>
+                                <h4 class="service-title">Web-App Develpment</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Information about Spring web .</p>
+                                <h5 class="heading-1 modal-heading mb20">Dev tools</h5>
+                                <p>Intellij Idea<br>Dependencies<br>HTML/CSS/JS<br>React<br></p>
+                                <h5 class="heading-1 modal-heading mb20">Focusing</h5>
+                                <p>Duplicating features of native application to Web Application to the closest extend
+                                    possible with exploration the posibilities of React.js</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="profile" class="background2 section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 section-title text-center">
+                    <h2>About me</h2>
+                    <span class="section-divider"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img alt="" src="https://scontent.fvno2-1.fna.fbcdn.net/v/t31.0-8/p960x960/13086831_1263477153682009_453964838763542078_o.jpg?_nc_cat=110&_nc_ohc=ErXvCSZbQlIAQkKiPJvbFwD4zHlTipWQ9H5cVcgwaLbGYJVvBx5UczJwg&_nc_ht=scontent.fvno2-1.fna&oh=58813a44ec67251c6875d8e31c2a5718&oe=5E6CA83D" class="img-responsive">
+                    <div class="profile-box">
+                        <ul class="list-unstyled">
+                            <li><strong>Name:</strong> Erikas Gudelis</li>
+                            <li><strong>Nationality:</strong> Lithuanian</li>
+                            <li><strong>Education:</strong> Bachelor in civil engineering systems</li>
+                            <li><strong>Phone:</strong> +370 689 12 708</li>
+                            <li><strong>Email:</strong> gudeliserikas@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-8 mt30-xs">
+                    <h5 class="heading-1 mb20">Intro</h5>
+                    <h3 class="mb15 no-margin-top">Hi, I'm Erikas. Nice to meet you.</h3>
+                    <p class="text-small text-switch">I am a junior java developer. I love coding and seeing my
+                        code bring things to life. I value simplicity and minimalism, because I believe that less is
+                        more.</p>
+                    <span class="divider"></span>
+                    <p class="text-small">Some text</p>
+                    <h5 class="heading-1 mt20 mb20">Skills</h5>
+
+
+                    <div class="progress">
+                        <div class="progress-bar text-left" role="progressbar" aria-valuenow="53" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 35%;">
+                            Java
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar text-left" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 18%;">
+                            JavaScript
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar text-left" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 40%;">
+                            CSS
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar text-left" role="progressbar" aria-valuenow="58" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 50%;">
+                            HTML
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar text-left" role="progressbar" aria-valuenow="58" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 28%;">
+                            SQL
+                        </div>
+                    </div>
+
+                    <div class="progress-meter">
+                        <div class="meter meter-left" style="width: 30%;"><span class="meter-text">Beginner</span></div>
+                        <div class="meter meter-left" style="width: 30%;"><span class="meter-text">Intermediate</span>
+                        </div>
+                        <div class="meter meter-right" style="width: 20%;"><span class="meter-text">Professional</span>
+                        </div>
+                        <div class="meter meter-right" style="width: 20%;"><span class="meter-text">Advanced</span>
+                        </div>
+                    </div>
+                    <p class="text-small mt50 no-margin-bottom">
+                        <span class="text-switch">I'm</span>
+                        motivated, ambitious, have goals and working on improving my competence on a daily basis with a
+                        growing momentum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="background1 section-padding">
+        <div class="container">
+            <div class="row mb30">
+                <div
+                    class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 section-title text-center">
+                    <h2>Get in touch</h2>
+                    <span class="section-divider mb15"></span>
+                    <p class="no-margin scaleReveal" data-sr-id="19"
+                        style=" visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+                        I would be glad for You to fill this tiny form...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 col-lg-4">
+                    <h5 class="heading-1 mb20">Location</h5>
+                    <h4 class="mb15">Vilnius • Lithuania<br></h4>
+                    <p class="text-xs-small mb5"><strong class="text-switch">Email:</strong> gudeliserikas@gmail.com</p>
+                    <p class="text-xs-small mb5"><strong class="text-switch">Phone:</strong> +370 689 12 708</p>
+                </div>
+                
+
+                <div class="row mb10">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="controls">
+                                <input class="form-control" data-error="This section is required." id="name"
+                                    placeholder="Name" required="" type="text">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="controls">
+                                <input class="email form-control" data-error="This section is required." id="email"
+                                    placeholder="Email" required="" type="email">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="controls">
+                                <textarea class="form-control" data-error="This section is required." id="message"
+                                    placeholder="Message" required="" rows="5"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt15">
+                    <div class="col-sm-6">
+                        <div id="msgSubmit" class="h4 hidden mt10 no-margin-bottom"></div>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <button type="submit" id="submit" class="btn btn-default btn-lg disabled"
+                            style="pointer-events: all; cursor: pointer;">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text-center">
+                    <h2 class="theme-title">Erikas</h2>
+                    <!--Linkai į facebook,linkedin-->
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text-small text-center">
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-up-footer btn-lg scroll-top">Up</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Mano.min.js"></script>
+    <script type="text/javascript" src="js/ManoRun.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="js/form-validator.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript">
+        $('#ourcount').one('inview', function (event, isInView) {
+            if (isInView) {
+                $('.timer').countTo({ speed: 3000 });
+            }
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/style-switcher.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+
+</html>
